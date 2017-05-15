@@ -18,12 +18,12 @@ public class DatabaseManager {
     SQLiteDatabase db;
     public static DatabaseManager INSTANCE;
 
-    public DatabaseManager(Context context) {
+    private DatabaseManager(Context context) {
         DatabaseHelper dbHelper = new DatabaseHelper(context);
         this.db = dbHelper.getWritableDatabase();
     }
 
-    public DatabaseManager getNewInstance(Context context) {
+    public static DatabaseManager getNewInstance(Context context) {
         if (INSTANCE == null) {
             INSTANCE = new DatabaseManager(context);
         }

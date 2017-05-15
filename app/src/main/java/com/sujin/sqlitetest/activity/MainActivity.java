@@ -14,7 +14,7 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        mApp.getDatabaseManager().insertUser(new Users(null,"Ram","ram@gmail.com","Kathmandu"));
+        mApp.getDatabaseManager().insertUser(new Users(null,"Geeta","getu@gmail.com","Kathmandu"));
 //        mApp.getDatabaseManager().insertUser(new Users(null,"Rama","rama@gmail.com","Kathmandu"));
 //        mApp.getDatabaseManager().insertUser(new Users(null,"Ramaa","ramaa@gmail.com","Kathmandu"));
         ArrayList<Users> userList = mApp.getDatabaseManager().getAll();
